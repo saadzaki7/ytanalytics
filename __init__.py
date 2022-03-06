@@ -11,7 +11,7 @@ app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///database.db'
 
 db.init_app(app)
-from .ytBackend import main
+from ytBackend import main
 app.register_blueprint(main)
 
 
